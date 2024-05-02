@@ -1,0 +1,8 @@
+node_modules
+node_modules/*
+package-lock.json
+*.zip
+dist/html
+dist/style.css
+ui.js
+.history

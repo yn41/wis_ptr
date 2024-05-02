@@ -1,0 +1,38 @@
+
+.container{
+	.top{
+		h1{
+			margin-bottom: 28px;
+		}
+	}
+}
+.area_filter{
+	@include setCont(100%, auto, block, relative, #fcfcfc);
+	padding: 37px 0 51px;
+	h3{
+		margin-bottom: 17px;
+	}
+	em{
+		display: inline-block;
+		@include font(16px, 19px, $medi);
+		margin: 0 15px;
+	}
+	.unit{
+		&+.unit{
+			margin-top: 24px;
+		}
+	}
+	.sub_tit{
+		margin-right: 9px;
+		@include font(16px, 19px);
+	}
+	.txt{
+		margin-left: 11px;
+	}
+	.bx_chk, .bx_radio{
+		margin: 0 12px;
+	}
+}
+.content{
+	padding: 40px 0 114px;
+}

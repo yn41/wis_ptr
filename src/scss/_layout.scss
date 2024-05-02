@@ -1,0 +1,56 @@
+.wrap{
+	@include setCont(100%, 100vh, flex, relative);
+	flex-direction: column;
+	justify-content: space-between;
+}
+.inner{
+	@include setCont(1006px, auto, block, relative);
+	margin: 0 auto;
+}
+.header{
+	@include setCont(100%, $header, block, relative, #313336);
+	flex-shrink: 0;
+	.inner{
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.left, .right{
+		display: flex;
+		align-items: center;
+		height: 100%;
+	}
+	.logo{
+		@include setCont(140px, 100%, block, relative);
+		@include bg("/common/logo.png", no-repeat, 50% 12px, 138px auto);
+		@include blind;
+	}
+	.link_login{
+		margin-right: 14.5px;
+		@include font(16px, 19px, $white, $medi);
+		transition: all 300ms;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+.container{
+	@include setCont(100%, auto, block, relative);
+	padding: 46px 0 0;
+	flex-grow: 1;
+}
+.footer{
+	@include setCont(100%, auto, block, relative, #fcfcfc);
+	padding: 82px 0;
+	flex-shrink: 0;
+	.f_logo{
+		@include setCont(163px, 33px, block, relative);
+		@include bg("/common/logo2.png", no-repeat, 50% 50%, 162px auto);
+		@include blind;
+		margin-bottom: 16px;
+	}
+	.biz{
+		@include font(15px, 18px, #bcbec3);
+	}
+}
